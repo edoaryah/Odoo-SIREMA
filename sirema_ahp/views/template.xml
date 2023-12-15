@@ -1,0 +1,45 @@
+<odoo>
+
+<!--    &lt;!&ndash; View Form &ndash;&gt;-->
+<!--    <record model="ir.ui.view" id="view_perhitungan_spk_form">-->
+<!--        <field name="name">perhitungan.spk.form</field>-->
+<!--        <field name="model">perhitungan.spk</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <form>-->
+<!--                <sheet>-->
+<!--                    <group>-->
+<!--                        <field name="mahasiswa_id"/>-->
+<!--                        <field name="nilai_topsis"/>-->
+<!--                        &lt;!&ndash; Tambahkan field lainnya sesuai kebutuhan &ndash;&gt;-->
+<!--                    </group>-->
+<!--                </sheet>-->
+<!--            </form>-->
+<!--        </field>-->
+<!--    </record>-->
+
+<!--    &lt;!&ndash; View Tree &ndash;&gt;-->
+<!--    <record model="ir.ui.view" id="view_perhitungan_spk_tree">-->
+<!--        <field name="name">perhitungan.spk.tree</field>-->
+<!--        <field name="model">perhitungan.spk</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <tree>-->
+<!--                <field name="mahasiswa_id"/>-->
+<!--                <field name="nilai_topsis"/>-->
+<!--                &lt;!&ndash; Tambahkan field lainnya sesuai kebutuhan &ndash;&gt;-->
+<!--            </tree>-->
+<!--        </field>-->
+<!--    </record>-->
+
+<!--    &lt;!&ndash; Action Window &ndash;&gt;-->
+<!--    <record model="ir.actions.act_window" id="action_menu_spk">-->
+<!--        <field name="name">Perhitungan SPK</field>-->
+<!--        <field name="type">ir.actions.act_window</field>-->
+<!--        <field name="res_model">perhitungan.spk</field>-->
+<!--        <field name="view_mode">tree,form</field>-->
+<!--        <field name="view_id" ref="view_perhitungan_spk_tree"/>-->
+<!--    </record>-->
+
+<!--    &lt;!&ndash; Menu Item &ndash;&gt;-->
+<!--    <menuitem name="Perhitungan SPK" id="menu_spk" parent="menu_spk_root" action="action_menu_spk" sequence="10"/>-->
+
+</odoo>

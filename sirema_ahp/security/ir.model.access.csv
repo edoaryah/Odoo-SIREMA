@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_import_wizard,Import Wizard,model_import_wizard,base.group_user,1,1,1,1
+access_sirema_ahp_mahasiswa_mahasiswa,sirema_ahp.mahasiswa.mahasiswa,model_mahasiswa_mahasiswa,base.group_user,1,1,1,1
+access_sirema_ahp_mahasiswa2_mahasiswa2,sirema_ahp.mahasiswa2.mahasiswa2,model_mahasiswa2_mahasiswa2,base.group_user,1,1,1,1
+access_sirema_ahp_mahasiswa3_mahasiswa3,sirema_ahp.mahasiswa3.mahasiswa3,model_mahasiswa3_mahasiswa3,base.group_user,1,1,1,1
+access_sirema_ahp_mahasiswa4_mahasiswa4,sirema_ahp.mahasiswa4.mahasiswa4,model_mahasiswa4_mahasiswa4,base.group_user,1,1,1,1
+access_sirema_ahp_perhitungan_spk,sirema_ahp.perhitungan_spk,model_perhitungan_spk,base.group_user,1,1,1,1
+access_mahasiswa_rekomendasi,Access Mahasiswa Rekomendasi,model_mahasiswa_rekomendasi,base.group_user,1,1,1,1
+access_data_awal,data.awal,model_data_awal,base.group_user,1,1,1,1

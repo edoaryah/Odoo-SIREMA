@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<odoo>
+    <report
+        id="report_mahasiswa_rekomendasi"
+        string="Rekomendasi Magang"
+        model="mahasiswa.rekomendasi"
+        report_type="qweb-pdf"
+        name="sirema_ahp.report_mahasiswa"
+        file="sirema_ahp.report_mahasiswa"/>
+</odoo>

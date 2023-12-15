@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="report_mahasiswa">
+        <t t-call="web.external_layout">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="doc">
+                    <style>
+                        table {
+                            width: 100%;
+                            border-collapse: collapse;
+                        }
+
+                        td {
+                            padding: 8px; /* Sesuaikan dengan kebutuhan Anda */
+                            border: 1px solid #ddd; /* Optional: Tambahkan border */
+                            text-align: left;
+                        }
+                    </style>
+
+                    <h2>Rekomendasi Bidang Magang</h2>
+                    <p>Nama Mahasiswa: <span><t t-esc="doc.name"/></span></p>
+                    <p>NIM Mahasiswa: <span><t t-esc="doc.nim"/></span></p>
+                    <table>
+                        <tr>
+                            <td>Data Analyst Score</td>
+                            <td>Software Engineer Score</td>
+                            <td>Jaringan Score</td>
+                            <td>UI/UX Score</td>
+                        </tr>
+                        <tr>
+                            <td><span><t t-esc="doc.nilai_topsis_mahasiswa1"/></span></td>
+                            <td><span><t t-esc="doc.nilai_topsis_mahasiswa2"/></span></td>
+                            <td><span><t t-esc="doc.nilai_topsis_mahasiswa3"/></span></td>
+                            <td><span><t t-esc="doc.nilai_topsis_mahasiswa4"/></span></td>
+                        </tr>
+                    </table>
+                    <br></br>
+                    <p>Bidang Direkomendasikan: <span><t t-esc="doc.rekomendasi"/></span></p>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

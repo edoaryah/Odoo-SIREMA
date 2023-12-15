@@ -1,0 +1,385 @@
+<odoo>
+
+<!--    PERHITUNGAN SPK BIDANG 1 - DATA ANALYST-->
+    <record model="ir.ui.view" id="view_data_mahasiswa_form">
+      <field name="name">mahasiswa.mahasiswa.form</field>
+      <field name="model">mahasiswa.mahasiswa</field>
+      <field name="arch" type="xml">
+          <form>
+              <sheet>
+                  <group>
+                      <field name="name"/>
+                      <field name="nim"/>
+                      <field name="mk1"/>
+                      <field name="mk2"/>
+                      <field name="mk3"/>
+                      <field name="mk4"/>
+                      <field name="mk5"/>
+                      <field name="mk6"/>
+                      <field name="nilai_topsis"/>
+                  </group>
+              </sheet>
+          </form>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_data_mahasiswa_tree">
+      <field name="name">mahasiswa.mahasiswa.tree</field>
+      <field name="model">mahasiswa.mahasiswa</field>
+      <field name="arch" type="xml">
+          <tree default_order="nilai_topsis desc">
+              <field name="name"/>
+              <field name="nim"/>
+              <field name="mk1"/>
+              <field name="mk2"/>
+              <field name="mk3"/>
+              <field name="mk4"/>
+              <field name="mk5"/>
+              <field name="mk6"/>
+              <field name="nilai_topsis"/>
+          </tree>
+      </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_menu_mahasiswa">
+      <field name="name">Perhitungan SPK Bidang 1 - Data Analyst</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">mahasiswa.mahasiswa</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Bidang Data Analyst" id="menu_mahasiwa" parent= "menu_datamahasiswa_root"
+              action="action_menu_mahasiswa"
+              sequence="10"/>
+
+
+<!--    DATA MAHASISWA-->
+    <record model="ir.ui.view" id="view_data_mhs_form">
+      <field name="name">data.awal.form</field>
+      <field name="model">data.awal</field>
+      <field name="arch" type="xml">
+          <form>
+              <sheet>
+                  <group>
+                      <field name="name"/>
+                      <field name="nim"/>
+                      <field name="mk1"/>
+                      <field name="mk2"/>
+                      <field name="mk3"/>
+                      <field name="mk4"/>
+                      <field name="mk5"/>
+                      <field name="mk6"/>
+                  </group>
+              </sheet>
+          </form>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_data_mhs_tree">
+      <field name="name">data.awal.tree</field>
+      <field name="model">data.awal</field>
+      <field name="arch" type="xml">
+          <tree>
+              <field name="name"/>
+              <field name="nim"/>
+              <field name="mk1"/>
+              <field name="mk2"/>
+              <field name="mk3"/>
+              <field name="mk4"/>
+              <field name="mk5"/>
+              <field name="mk6"/>
+          </tree>
+      </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_menu_mhs">
+      <field name="name">Data Mahasiswa</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">data.awal</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Data Mahasiswa" id="menu_mhs" parent= "menu_sirema_root"
+              action="action_menu_mhs"
+              sequence="10"/>
+
+
+
+<!--    IMPORT DATA KE MODELS DATA.AWAL-->
+    <record id="import_wizard_action" model="ir.actions.act_window">
+      <field name="name">Import Data</field>
+      <field name="res_model">import.wizard</field>
+      <field name="view_mode">form</field>
+      <field name="target">new</field>
+    </record>
+
+    <record id="import_wizard_view" model="ir.ui.view">
+      <field name="name">import.wizard.form</field>
+      <field name="model">import.wizard</field>
+      <field name="arch" type="xml">
+        <form string="Import Data">
+          <group>
+            <field name="file"/>
+          </group>
+          <footer>
+            <button name="import_data" string="Import" type="object" class="btn-primary"/>
+            <button string="Cancel" class="btn-secondary" special="cancel"/>
+          </footer>
+        </form>
+      </field>
+    </record>
+
+    <menuitem name="Import Data" id="menu_importdata_root" parent="menu_sirema_root" action="import_wizard_action" sequence="10"/>
+
+
+
+<!--    PERHITUNGAN SPK BIDANG 2 - SOFTWARE ENGINEER-->
+    <record model="ir.ui.view" id="view_data_mahasiswa2_form">
+      <field name="name">mahasiswa2.mahasiswa2.form</field>
+      <field name="model">mahasiswa2.mahasiswa2</field>
+      <field name="arch" type="xml">
+          <form>
+              <sheet>
+                  <group>
+                      <field name="name"/>
+                      <field name="nim"/>
+                      <field name="mk1"/>
+                      <field name="mk2"/>
+                      <field name="mk3"/>
+                      <field name="mk4"/>
+                      <field name="mk5"/>
+                      <field name="mk6"/>
+                      <field name="nilai_topsis"/>
+                  </group>
+              </sheet>
+          </form>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_data_mahasiswa2_tree">
+      <field name="name">mahasiswa2.mahasiswa2.tree</field>
+      <field name="model">mahasiswa2.mahasiswa2</field>
+      <field name="arch" type="xml">
+          <tree default_order="nilai_topsis desc">
+              <field name="name"/>
+              <field name="nim"/>
+              <field name="mk1"/>
+              <field name="mk2"/>
+              <field name="mk3"/>
+              <field name="mk4"/>
+              <field name="mk5"/>
+              <field name="mk6"/>
+              <field name="nilai_topsis"/>
+          </tree>
+      </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_menu_mahasiswa2">
+      <field name="name">Perhitungan SPK Bidang 2 - Software Engineer</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">mahasiswa2.mahasiswa2</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Bidang Software Engineer" id="menu_mahasiwa2" parent= "menu_datamahasiswa_root"
+              action="action_menu_mahasiswa2"
+              sequence="10"/>
+
+
+
+<!--    CLEAR DATA ALL MODELS-->
+    <record id="access_clear_data_wizard" model="ir.model.access">
+        <field name="name">Access Clear Data Wizard</field>
+        <field name="model_id" ref="model_clear_data_wizard"/>
+        <field name="group_id" ref="base.group_user"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="1"/>
+        <field name="perm_create" eval="1"/>
+        <field name="perm_unlink" eval="1"/>
+    </record>
+
+    <record model="ir.ui.view" id="clear_data_wizard_view_form">
+        <field name="name">clear_data_wizard.view.form</field>
+        <field name="model">clear_data_wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="confirmation_text" readonly="1" />
+                </group>
+                <footer>
+                    <button string="Clear Data" class="oe_highlight" type="object" name="clear_data" />
+                    <button string="Close" class="oe_secondary" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_clear_data">
+        <field name="name">Clear Data</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">clear_data_wizard</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="clear_data_wizard_view_form"/>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem name="Clear Data" id="menu_cleardata_root" parent="menu_sirema_root" action="action_clear_data" sequence="20"/>
+
+
+
+<!--    PERHITUNGAN SPK BIDANG 3 - JARINGAN-->
+    <record model="ir.ui.view" id="view_data_mahasiswa3_form">
+      <field name="name">mahasiswa3.mahasiswa3.form</field>
+      <field name="model">mahasiswa3.mahasiswa3</field>
+      <field name="arch" type="xml">
+          <form>
+              <sheet>
+                  <group>
+                      <field name="name"/>
+                      <field name="nim"/>
+                      <field name="mk1"/>
+                      <field name="mk2"/>
+                      <field name="mk3"/>
+                      <field name="mk4"/>
+                      <field name="mk5"/>
+                      <field name="mk6"/>
+                      <field name="nilai_topsis"/>
+                  </group>
+              </sheet>
+          </form>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_data_mahasiswa3_tree">
+      <field name="name">mahasiswa3.mahasiswa3.tree</field>
+      <field name="model">mahasiswa3.mahasiswa3</field>
+      <field name="arch" type="xml">
+          <tree default_order="nilai_topsis desc">
+              <field name="name"/>
+              <field name="nim"/>
+              <field name="mk1"/>
+              <field name="mk2"/>
+              <field name="mk3"/>
+              <field name="mk4"/>
+              <field name="mk5"/>
+              <field name="mk6"/>
+              <field name="nilai_topsis"/>
+          </tree>
+      </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_menu_mahasiswa3">
+      <field name="name">Perhitungan SPK Bidang 3 - Jaringan</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">mahasiswa3.mahasiswa3</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Bidang Jaringan" id="menu_mahasiwa3" parent= "menu_datamahasiswa_root"
+              action="action_menu_mahasiswa3"
+              sequence="10"/>
+
+
+
+<!--    PERHITUNGAN SPK BIDANG 4 - UI/UX-->
+    <record model="ir.ui.view" id="view_data_mahasiswa4_form">
+      <field name="name">mahasiswa4.mahasiswa4.form</field>
+      <field name="model">mahasiswa4.mahasiswa4</field>
+      <field name="arch" type="xml">
+          <form>
+              <sheet>
+                  <group>
+                      <field name="name"/>
+                      <field name="nim"/>
+                      <field name="mk1"/>
+                      <field name="mk2"/>
+                      <field name="mk3"/>
+                      <field name="mk4"/>
+                      <field name="mk5"/>
+                      <field name="mk6"/>
+                      <field name="nilai_topsis"/>
+                  </group>
+              </sheet>
+          </form>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_data_mahasiswa4_tree">
+      <field name="name">mahasiswa4.mahasiswa4.tree</field>
+      <field name="model">mahasiswa4.mahasiswa4</field>
+      <field name="arch" type="xml">
+          <tree default_order="nilai_topsis desc">
+              <field name="name"/>
+              <field name="nim"/>
+              <field name="mk1"/>
+              <field name="mk2"/>
+              <field name="mk3"/>
+              <field name="mk4"/>
+              <field name="mk5"/>
+              <field name="mk6"/>
+              <field name="nilai_topsis"/>
+          </tree>
+      </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_menu_mahasiswa4">
+      <field name="name">Perhitungan SPK Bidang 4 - UI/UX</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">mahasiswa4.mahasiswa4</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Bidang UI/UX" id="menu_mahasiwa4" parent= "menu_datamahasiswa_root"
+              action="action_menu_mahasiswa4"
+              sequence="10"/>
+
+
+
+<!--    REKOMENDASI-->
+    <record model="ir.ui.view" id="view_data_mahasiswa_rekomendasi_form">
+      <field name="name">mahasiswa.rekomendasi.form</field>
+      <field name="model">mahasiswa.rekomendasi</field>
+      <field name="arch" type="xml">
+          <form>
+              <sheet>
+                  <group>
+                      <field name="nim"/>
+                      <field name="nilai_topsis_mahasiswa1"/>
+                      <field name="nilai_topsis_mahasiswa2"/>
+                      <field name="nilai_topsis_mahasiswa3"/>
+                      <field name="nilai_topsis_mahasiswa4"/>
+                      <field name="rekomendasi"/>
+                  </group>
+              </sheet>
+          </form>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_data_mahasiswa_rekomendasi_tree">
+      <field name="name">mahasiswa.rekomendasi.tree</field>
+      <field name="model">mahasiswa.rekomendasi</field>
+      <field name="arch" type="xml">
+          <tree>
+              <field name="name"/>
+              <field name="nim"/>
+              <field name="nilai_topsis_mahasiswa1"/>
+              <field name="nilai_topsis_mahasiswa2"/>
+              <field name="nilai_topsis_mahasiswa3"/>
+              <field name="nilai_topsis_mahasiswa4"/>
+              <field name="rekomendasi"/>
+          </tree>
+      </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_menu_mahasiswa_rekomendasi">
+      <field name="name">Rekomendasi Bidang Magang Mahasiswa</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">mahasiswa.rekomendasi</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Rekomendasi" id="menu_mahasiwa_rekomendasi" parent= "menu_sirema_root"
+              action="action_menu_mahasiswa_rekomendasi"
+              sequence="10"/>
+
+</odoo>

@@ -1,0 +1,6 @@
+<odoo>
+
+  <menuitem name="SIREMA" id="menu_sirema_root" sequence="10"/>
+  <menuitem name="Perhitungan SPK" id="menu_datamahasiswa_root" parent="menu_sirema_root" sequence="12"/>
+
+</odoo>
